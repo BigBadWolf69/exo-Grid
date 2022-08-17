@@ -1,0 +1,36 @@
+@media (min-width: 300px) and (max-width: 420px){
+    .wrapper {
+        height: 100vh;
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:15% 10% 50% 15% 10%;
+        grid-template-areas: 
+            "logo"
+            "nav"
+            "content"
+            "feat"
+            "footer"
+    }
+    .one {
+        grid-area: logo;
+        background-color: brown;
+    }
+    .two {
+        grid-area: nav;
+        background-color: blue;
+    }
+    .three {
+        grid-area: content;
+        background-color: white;
+    }
+    .four {
+        grid-area: feat;
+        background-color: aquamarine;
+    }
+    .five {
+        grid-area: footer;
+        background-color: black;
+        color: white;
+    }
+}
